@@ -5832,7 +5832,7 @@ class TCPDF {
 			if ($fitcell) {
 				// ajust height values
 				$tobottom = ($this->h - $this->y - $this->bMargin - $this->cell_padding['T'] - $this->cell_padding['B']);
-				$h = $maxh = max(min($h, $tobottom), min($maxh, $tobottom));
+				$h = $maxh = min(min($h, $tobottom), min($maxh, $tobottom));
 			}
 			// vertical alignment
 			if ($maxh > 0) {
